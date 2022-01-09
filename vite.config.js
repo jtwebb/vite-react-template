@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import svgr from '@svgr/rollup';
 import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
 import fs from 'fs';
@@ -11,7 +12,7 @@ dotenv.config();
 // https://vitejs.dev/config/
 export default ({ mode }) => {
   return defineConfig({
-    plugins: [react()],
+    plugins: [react(), svgr()],
     clearScreen: false,
     css: {
       preprocessorOptions: {
