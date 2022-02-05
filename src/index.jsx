@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as serviceWorkerRegistration from './service-worker/service-worker-registration';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import App from './App';
 
 ReactDOM.render(
