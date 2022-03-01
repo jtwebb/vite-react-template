@@ -39,6 +39,14 @@
   "eslintConfig": {
     "extends": [
       "plugin:@jtwebb/react"
+    ],
+    "overrides": [
+      {
+        "files": ["vite.config.js"],
+        "globals": {
+          "__dirname": true
+        }
+      }
     ]
   },
   "prettier": {
